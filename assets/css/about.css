@@ -1,0 +1,373 @@
+*{
+    /* font-family: "Roboto", sans-serif; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  body{
+    height: 100%;
+    background-color: #000;
+    width: 100%;
+    overflow-x: hidden;
+  }
+ 
+   /* Header styles */
+   .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1rem; */
+    background-color: #0f0f0f;
+    color: wheat;
+}
+
+.logo {
+  background: url(/assets/logo/logohome.png) no-repeat;
+  background-position:center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  cursor: pointer;
+  /* border: 2px solid #bdbaba; */
+}
+
+
+.logo {
+  height: 5rem;
+  width: 15.625rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;;
+}
+
+.abt-link-btn,
+.f-s-link,
+.f-sp-link {
+    text-decoration: none;
+    color: #bdbaba;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.abt-link-btn i,
+.f-s-link i,
+.f-sp-link i {
+    margin-right: 0.5rem;
+}
+
+a.abt-link-btn{
+  font-family: serif;
+}
+
+.link-bx {
+    display: flex;
+}
+
+i, a.abt-link-btn{
+  width: 100%;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+i.bx.bxs-group{
+  font-size: 2rem;
+  vertical-align: middle;
+  width: 40px; 
+  margin: 0;
+}
+
+i.bx.bx-store::before{
+  font-size: 1.9rem;
+  vertical-align: middle;
+  padding: 0 10px 0 0;
+}
+
+i.bx.bx-support::before{
+  font-size: 1.9rem;
+  vertical-align: middle;
+  padding: 0 10px 0 0;
+}
+
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .navbar {
+        margin-top: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .abt-link-btn,
+    .f-s-link,
+    .f-sp-link {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    .link-bx {
+        flex-direction: column;
+        margin-top: 0.5rem;
+    }
+}
+ 
+  
+/* -----------------------------section page rules contents here------------------ */
+
+section.section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* padding: 2rem; */
+    /* background-color: silver; */
+    display: flex;
+    flex-flow: column;
+    background: url(/assets/images/website\ images-2.png) no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+  }
+  
+  div.pg-bx{
+    /* position: relative; */
+    height: 100%;
+    width: 100%;
+    color: silver;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  div.pg-bx > p{
+    width: 50%;
+    height: inherit;
+    padding: 1rem;
+    line-height: 1.24em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    /* margin-top: 5px; */
+  }
+  
+  div.pg-bx > h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    width: 100%;
+    padding: 2rem 0 0 0;
+    text-transform: uppercase;
+  }
+  
+  
+  /* -------------------------blog section rules here------------------------------- */
+  #blog{
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    color: wheat;
+    z-index: 300;
+  }
+  
+  .blog-pt1,.blog-pt2{
+    width: 50%;
+  }
+  
+  div.blog-pt1{
+    padding: 1rem 1rem 0 3.55rem;
+  }
+  
+  .h2{
+    margin: 0px,0px,30px,0;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  
+  .blg-p{
+    padding: 0 0 1.5rem 0;
+  }
+  h3{
+    text-align: left;
+    text-decoration: none;
+  }
+  
+  
+  .row-1{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 1% 0;
+    border-radius: 25px;
+  }
+   
+  .row-2{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 1% 0;
+    border-radius: 40px;
+  }
+  
+  .row-3{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 1% 0;
+    border-radius: 40px;
+  }
+  
+  .blog-pt2{
+    height:calc(100%-30%) ;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding: 0 1%;
+  }
+  
+  .H2{
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 1.2rem 0 1rem 0;
+  }
+  .rw-1,.rw-2,.rw-3{
+    width: 100%;
+    display: flex;
+    margin: 10px 0;
+    padding: 2% 0;
+    border-radius: 25px;
+  }
+  
+  .ff-app-gt{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+  }
+  
+  
+  
+  
+  /* -------------------------blog section rules ends here------------------------------- */
+  
+  
+  
+  
+  /* -----------------------------section page rules contents ends here------------------ */
+  
+  
+  /* -----------------------------footer contents ------------------------------------- */
+
+/* Footer styles */
+.footer {
+  bottom: 0 !important;
+  background-color: #0f0f0f;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.doc-bx {
+  display: flex;
+  gap: 1rem;
+}
+
+.policy,
+.terms {
+  text-decoration: none;
+  color: #bdbaba;
+}
+
+.c-right {
+  color: #bdbaba;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .doc-bx {
+      margin-bottom: 0.5rem;
+  }
+}
+
+  /* -----------------------------footer contents ends ---------------------------- */
+
+  /* /hover effects rules */
+
+/* --------------------hover effect--------------------- */
+.abt-link-btn,
+.f-s-link,
+.f-sp-link,
+i.bx.bxs-group,
+i,
+i.bx.bx-store::before,
+i.bx.bx-support::before {
+  transition: all 0.5s ease; /* Add a smooth transition */
+}
+
+.abt-link-btn:hover,
+.f-s-link:hover,
+.f-sp-link:hover,
+i.bx.bxs-group:hover,
+i:hover,
+i.bx.bx-store:hover::before,
+i.bx.bx-support:hover::before {
+  transform: scale(0.9); 
+  background: linear-gradient(to right, rgb(148, 238, 3), black);
+  border-radius: 10px;
+}
+
+
+.logo {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .logo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, hsla(98, 98%, 49%, 0.603), black);/* Adjust color and opacity as needed */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover::before {
+    transform: translateX(0);
+  }
+
+
+  .policy,
+  .terms{
+    transition: all 0.5s ease;
+  }
+
+  .policy:hover,
+  .terms:hover{
+    transform: scale(0.9); 
+    background: linear-gradient(to right, rgb(148, 238, 3), black);
+    border-radius: 10px;
+  }
+  /* -----------------------------hover effect --end-- */
+
+/* /hover effects rules */

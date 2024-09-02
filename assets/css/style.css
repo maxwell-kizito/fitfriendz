@@ -1,0 +1,528 @@
+/* css font link*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+/* css font link*/
+
+
+*{
+  /* font-family: "Roboto", sans-serif; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
+}
+
+@media(max-width:768px) {
+  .hambuger{
+    display: block;
+  }
+
+  .hambuger.active.bar:nth-child(2){
+    opacity: 0;
+  }
+
+  .hambuger.active.bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hambuger.active.bar:nth-child(3){
+    transform: translateY(8px) rotate(-45deg);
+  }
+
+
+}
+
+body{
+  height: 100%;
+  background-color: #000;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+  /* Header styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1rem; */
+    background-color: #0f0f0f;
+    color: wheat;
+}
+
+.logo {
+  background: url(/assets/logo/logohome.png) no-repeat;
+  background-position:center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  cursor: pointer;
+  /* border: 2px solid #bdbaba; */
+}
+
+
+.logo {
+  height: 5rem;
+  width: 15.625rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;;
+}
+
+.abt-link-btn,
+.f-s-link,
+.f-sp-link {
+    text-decoration: none;
+    color: #bdbaba;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.abt-link-btn i,
+.f-s-link i,
+.f-sp-link i {
+    margin-right: 0.5rem;
+}
+
+a.abt-link-btn{
+  font-family: serif;
+}
+
+.link-bx {
+    display: flex;
+}
+
+i, a.abt-link-btn{
+  width: 100%;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+i.bx.bxs-group{
+  font-size: 2rem;
+  vertical-align: middle;
+  width: 40px; 
+  margin: 0;
+}
+
+i.bx.bx-store::before{
+  font-size: 1.9rem;
+  vertical-align: middle;
+  padding: 0 10px 0 0;
+}
+
+i.bx.bx-support::before{
+  font-size: 1.9rem;
+  vertical-align: middle;
+  padding: 0 10px 0 0;
+}
+
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .header {
+        position: fixed;
+        flex-direction: row;
+    }
+    .logo {
+      height: 3rem;
+      width: 10rem;
+        /* margin-bottom: 1rem; */
+    }
+
+    .navbar {
+        width: 50%;
+        /* margin-top: 1rem; */
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center ;
+    }
+    .abt-link-btn{
+      width: 120px;
+    }
+    .abt-link-btn,
+    .f-s-link,
+    .f-sp-link {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    .link-bx {
+        flex-direction: column;
+        margin-top: 0.5rem;
+    }
+}
+
+.img-holder{
+  display: block;
+  height: 500px;
+  width: 400px;
+  /* border: 2px solid white; */
+  background: url(/assets/logo/img-holder.png) no-repeat;
+  background-size: 80%;
+  background-position: center;
+  opacity: 0.8;
+}
+
+ 
+
+/* main-bg rules here */
+
+.main{
+  height: 34rem;
+  width: 100%;
+  background: url(/assets/images/homegif.gif) no-repeat;
+  background-size: cover;
+  background-position:center;
+}
+
+.main{
+  display: flex;
+  flex-flow: row-reverse;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.img-holder{
+  display: inherit;
+  height: 500px;
+  width: 400px;
+  /* border: 2px solid white; */
+  background: url(/assets/logo/img-holder.png) no-repeat;
+  background-size: 80%;
+  background-position: center;
+  opacity: 0.8;
+
+}
+
+.abt-hdr{
+  height: inherit;
+  width:50.5% ;
+  padding-right: 2rem;
+  display: flex;
+  flex-flow: column;
+  /* justify-content: center; */
+}
+
+.clear{
+  height: 90px;
+}
+
+.abt-hdr h1{
+  /* font-family: copperplate, fantasy; */
+  text-transform: capitalize;
+  color: #ffffff;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 3rem;
+  /* padding-top: 10%; */
+}
+
+.h1-f{
+  color:#CBFF00 ;
+}
+
+h4{
+  color:#CBFF00 ;
+  font-size: 1.4rem;
+}
+
+.abt-hdr h1{
+  /* background: url(/assets/images/absract-flower.jpg) no-repeat; */
+  background-position: center;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* -webkit-text-fill-color: transparent; */
+}
+
+
+.txt-bg{
+  padding: 2%;
+  font-family: 'Geologica''Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 37px;
+  font-weight: 34px;
+  width: 100%;
+  text-align: center;
+}
+
+div.get-app-bg{
+  bottom: 0!important;
+  /* padding-top: 10%; */
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+
+div.btn-1, div.btn-2{
+  height: 70px;
+  width: 250px;
+  padding: 20px;
+  display: flex;
+  text-decoration: none;
+  border: 1px solid black;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+
+div.btn-1{
+  background: url(/assets/images/app-store2.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+div.btn-2{
+  background: url(/assets/images/play-store.png) no-repeat;
+  background-position: center;
+  background-size: 136%;
+
+}
+
+@media screen and (max-width: 768px) {
+  .main .get-app-bg{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+  }
+
+  
+}
+/* main-bg rules ends  here---------------------------------------------------------- */
+
+
+
+
+
+
+/* -----------------------------footer contents ------------------------------------- */
+
+
+.footer {
+  bottom: 0 !important;
+  background-color: #0f0f0f;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.doc-bx {
+  display: flex;
+  gap: 1rem;
+}
+
+.policy,
+.terms {
+  text-decoration: none;
+  color: #bdbaba;
+}
+
+.c-right {
+  color: #bdbaba;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+      bottom: 0 !important;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .doc-bx {
+      margin-bottom: 0.5rem;
+  }
+}
+
+/* -----------------------------footer contents ends ---------------------------- */
+
+/* /hover effects rules */
+
+/* i.bx.bx-store::before */
+
+/* i.bx.bx-support::before */
+.abt-link-btn,
+.f-s-link,
+.f-sp-link,
+i.bx.bxs-group,
+i,
+i.bx.bx-store::before,
+i.bx.bx-support::before {
+  transition: all 0.5s ease; /* Add a smooth transition */
+}
+
+.abt-link-btn:hover,
+.f-s-link:hover,
+.f-sp-link:hover,
+i.bx.bxs-group:hover,
+i:hover,
+i.bx.bx-store:hover::before,
+i.bx.bx-support:hover::before {
+  transform: scale(0.9); 
+  background: linear-gradient(to right, rgb(148, 238, 3), black);
+  border-radius: 10px;
+}
+
+
+.logo {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .logo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, hsla(98, 98%, 49%, 0.603), black);/* Adjust color and opacity as needed */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover::before {
+    transform: translateX(0);
+  }
+
+
+  .policy,
+  .terms{
+    transition: all 0.5s ease;
+  }
+
+  .policy:hover,
+  .terms:hover{
+    transform: scale(0.9); 
+    background: linear-gradient(to right, rgb(148, 238, 3), black);
+    border-radius: 10px;
+  }
+
+/* /hover effects rules */
+
+/* screen sizes for tablets */
+
+/* 768 x 1024 */
+/* 810 x 1080 */
+/* 820 x 1180 */
+/* 1280 x 800 */
+/* 800 x 1280 */
+/* 601 x 962 */
+
+/* screen sizes for tablets */
+
+/* screen sizes for mobile */
+/* 
+360 x 800
+390 x 844
+393 x 873
+412 x 915
+414 x 896
+360 x 780 */
+
+/* screen sizes for mobile */
+/* --------------------------screen responsiveness-------------------------------------- */
+
+
+/* screen responsiveness for mobile phones */
+@media screen and (max-width: 768px) {
+  .main {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+  }
+  .img-holder{
+    display: block;
+    height: 200px;
+    width: 100px;
+    background: url(/assets/logo/img-holder.png) no-repeat;
+    background-size: 80%;
+    background-position: center;
+    opacity: 0.8;
+  
+  }
+  .abt-hdr {
+    width: 100%;
+    padding: 0;
+  }
+
+  .abt-hdr h1 {
+    font-size: 2rem;
+  }
+
+  .txt-bg {
+    font-size: 24px;
+  }
+
+  .get-app-bg {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .btn-1,
+  .btn-2 {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  *{
+    /* font-family: "Roboto", sans-serif; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .header{
+    top: 0;
+    position: relative;
+    width: 100%;
+    z-index: 100;
+    background-color: #0f0f0f;
+  }
+
+  .navbar{
+    position:absolute ;
+    top: 40px; right: 0px;
+    width: 30%;
+    display: block;
+  }
+
+
+}
+/* --------------------------screen responsiveness-------------------------------------- */

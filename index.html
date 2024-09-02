@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <!-- <link rel="stylesheet" href="assets/css/style.test.css"> -->
+  <!-- ======================favivon section============================== -->
+   <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon_io/android-chrome-192x192.png">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png">
+
+<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon_io/android-chrome-512x512.png">
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+
+ <!-- =================================================================== -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!--==============google fonts=============-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+ <!--=============google fonts====================-->
+ <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ <link rel="shortcut icon" href="/assets" type="image/x-icon">
+  <title>Fit friendz</title>
+</head>
+
+<body>
+
+<header class="header">
+  <div href="index.html" class="logo">
+  
+</div>
+
+  
+ <nav class="navbar">
+  <a href="about.html" class="abt-link-btn"><i class='bx bxs-group'></i>About</a>
+
+  <div class="link-bx">
+      <a  class="f-s-link" href="#"><i  class='bx bx-store'>FitShop
+      </i></a>
+      
+      <a  class="f-sp-link" href="support.html"><i class='bx bx-support' >Support
+      </i></a>
+  </div>
+
+  <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+  </div>
+
+ </nav>
+
+</header>
+
+
+<main class="main">
+
+  <div class="img-holder">
+    <!-- <img src="/assets/images/6.png" alt="this is a place holder img" > -->
+  </div>
+
+    <div class="abt-hdr">
+      <span class="clear"></span>
+      <h1>Connect with <span class="h1-f">FitFriendz</span>Near you!</h1>
+
+      <div class="txt-bg">
+        <h4>The ultimate social media app where friends connect with fitness...</h4>
+      </div>
+        <span class="clear"></span>
+      <div class="get-app-bg">
+        <a href="#"> <div href="#" class="btn-1" href="#" ></div></a>
+        <a href="#"><div href="#" class="btn-2" href="#"></div></a>
+       
+      </div>
+    </div>
+  
+</main>
+
+
+
+
+<footer class="footer">
+
+  <div class="doc-bx">
+
+    <a class="policy" href="#">Privacy Policy</a>   
+    
+    <a class="terms" href="#">Terms & Condition</a>
+
+  </div>
+
+  <div class="c-right">
+   Copyright &copy; Fitfriendz 2024
+  </div>
+
+
+</footer>
+
+
+
+<script src="/js/resize.js">
+  function stackElements() {
+    const elements = document.querySelectorAll('div');
+    let topPosition = 0;
+
+    for (let i = 0; i < elements.length; i++) {
+      elements[i].style.position = 'relative';
+      elements[i].style.top = topPosition + 'px';
+      topPosition += (elements[i].offsetHeight + 10);
+    }
+  }
+
+  // Initial stacking
+  stackElements();
+
+  // Update stacking on window resize
+  window.onresize = function() {
+    stackElements();
+  };
+</script>
+
+<!-- 
+
+// Theme Main Js //-->
+
+<!--// Typed Text //-->
+<!-- <script>
+     var options = {
+        strings: ["Discover And Connect,",
+         ",Inspire And Be Inspire,", 
+         "Find Your Fitness Match",
+         "A Tailored Community",
+          "To Experience Engaging Content",
+        ],
+        typeSpeed: 200,
+        backSpeed: 40,
+        loop: true,
+        Infinity:true,
+    }
+    var typed = new Typed("#typed-text", options);
+</script> --> 
+
+  
+  
+</body>
+</html>
