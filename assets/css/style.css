@@ -151,12 +151,10 @@ i.bx.bx-support::before{
     .logo {
       height: 3rem;
       width: 10rem;
-        /* margin-bottom: 1rem; */
     }
 
     .navbar {
         width: 50%;
-        /* margin-top: 1rem; */
         flex-direction: row;
         justify-content: space-between;
         align-items: center ;
@@ -181,7 +179,6 @@ i.bx.bx-support::before{
   display: block;
   height: 500px;
   width: 400px;
-  /* border: 2px solid white; */
   background: url(/assets/logo/img-holder.png) no-repeat;
   background-size: 80%;
   background-position: center;
@@ -212,7 +209,6 @@ i.bx.bx-support::before{
   display: inherit;
   height: 500px;
   width: 400px;
-  /* border: 2px solid white; */
   background: url(/assets/logo/img-holder.png) no-repeat;
   background-size: 80%;
   background-position: center;
@@ -226,7 +222,6 @@ i.bx.bx-support::before{
   padding-right: 2rem;
   display: flex;
   flex-flow: column;
-  /* justify-content: center; */
 }
 
 .clear{
@@ -234,14 +229,11 @@ i.bx.bx-support::before{
 }
 
 .abt-hdr h1{
-  /* font-family: copperplate, fantasy; */
-  text-transform: capitalize;
   color: #ffffff;
   letter-spacing: 0.3rem;
   text-align: center;
   font-weight: bolder;
   font-size: 3rem;
-  /* padding-top: 10%; */
 }
 
 .h1-f{
@@ -254,13 +246,11 @@ h4{
 }
 
 .abt-hdr h1{
-  /* background: url(/assets/images/absract-flower.jpg) no-repeat; */
   background-position: center;
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
-  /* -webkit-text-fill-color: transparent; */
-}
+ }
 
 
 .txt-bg{
@@ -274,8 +264,7 @@ h4{
 
 div.get-app-bg{
   bottom: 0!important;
-  /* padding-top: 10%; */
-  height: 50px;
+   height: 50px;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -382,7 +371,7 @@ i.bx.bxs-group,
 i,
 i.bx.bx-store::before,
 i.bx.bx-support::before {
-  transition: all 0.5s ease; /* Add a smooth transition */
+  transition: all 0.5s ease;  /* Add a smooth   transition */                                 
 }
 
 .abt-link-btn:hover,
@@ -410,7 +399,7 @@ i.bx.bx-support:hover::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to left, hsla(98, 98%, 49%, 0.603), black);/* Adjust color and opacity as needed */
+    background: linear-gradient(to left, hsla(98, 98%, 49%, 0.603), black);
     transform: translateX(-100%);
     transition: transform 0.3s ease;
   }
@@ -501,8 +490,7 @@ i.bx.bx-support:hover::before {
 
 @media screen and (max-width: 500px) {
   *{
-    /* font-family: "Roboto", sans-serif; */
-    box-sizing: border-box;
+       box-sizing: border-box;
     margin: 0;
     padding: 0;
     width: 100%;

@@ -140,7 +140,7 @@ section.section{
     /* position: relative; */
     height: 100%;
     width: 100%;
-    color: silver;
+    color: wheat;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -158,7 +158,7 @@ section.section{
   }
   
   div.pg-bx > h2{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
     text-align: center;
     font-weight: 700;
     font-size: 40px;
