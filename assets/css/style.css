@@ -17,41 +17,6 @@
   padding: 0;
 }
 
-.hamburger{
-  display: none;
-  cursor: pointer;
-
-}
-
-.bar{
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #ffffff;
-}
-
-@media(max-width:768px) {
-  .hambuger{
-    display: block;
-  }
-
-  .hambuger.active.bar:nth-child(2){
-    opacity: 0;
-  }
-
-  .hambuger.active.bar:nth-child(1){
-    transform: translateY(8px) rotate(45deg);
-  }
-
-  .hambuger.active.bar:nth-child(3){
-    transform: translateY(8px) rotate(-45deg);
-  }
-
-
-}
 
 body{
   height: 100%;
@@ -139,40 +104,6 @@ i.bx.bx-support::before{
   font-size: 1.9rem;
   vertical-align: middle;
   padding: 0 10px 0 0;
-}
-
-
-/* Responsive styles */
-@media screen and (max-width: 768px) {
-    .header {
-        position: fixed;
-        flex-direction: row;
-    }
-    .logo {
-      height: 3rem;
-      width: 10rem;
-    }
-
-    .navbar {
-        width: 50%;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center ;
-    }
-    .abt-link-btn{
-      width: 120px;
-    }
-    .abt-link-btn,
-    .f-s-link,
-    .f-sp-link {
-        margin-left: 0;
-        margin-top: 0.5rem;
-    }
-
-    .link-bx {
-        flex-direction: column;
-        margin-top: 0.5rem;
-    }
 }
 
 .img-holder{
@@ -488,7 +419,7 @@ i.bx.bx-support:hover::before {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 498px) {
   *{
        box-sizing: border-box;
     margin: 0;
@@ -509,6 +440,25 @@ i.bx.bx-support:hover::before {
     top: 40px; right: 0px;
     width: 30%;
     display: block;
+  }
+  .clear{
+    height: 1px;
+  }
+
+  .get-app-bg{
+    
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+  }
+
+
+  
+  #btn-1, #btn-2{
+    height: 20px;
+    width: 80px;
   }
 
 

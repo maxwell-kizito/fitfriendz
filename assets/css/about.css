@@ -18,7 +18,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 1rem; */
     background-color: #0f0f0f;
     color: wheat;
 }
@@ -31,7 +30,6 @@
   align-items: center;
   border-radius: 100px;
   cursor: pointer;
-  /* border: 2px solid #bdbaba; */
 }
 
 
@@ -95,30 +93,7 @@ i.bx.bx-support::before{
 }
 
 
-/* Responsive styles */
-@media screen and (max-width: 768px) {
-    .header {
-        flex-direction: column;
-    }
 
-    .navbar {
-        margin-top: 1rem;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .abt-link-btn,
-    .f-s-link,
-    .f-sp-link {
-        margin-left: 0;
-        margin-top: 0.5rem;
-    }
-
-    .link-bx {
-        flex-direction: column;
-        margin-top: 0.5rem;
-    }
-}
  
   
 /* -----------------------------section page rules contents here------------------ */
@@ -127,8 +102,6 @@ section.section{
     position: relative;
     width: 100%;
     height: 100%;
-    /* padding: 2rem; */
-    /* background-color: silver; */
     display: flex;
     flex-flow: column;
     background: url(/assets/images/website\ images-2.png) no-repeat;
@@ -137,7 +110,6 @@ section.section{
   }
   
   div.pg-bx{
-    /* position: relative; */
     height: 100%;
     width: 100%;
     color: wheat;
@@ -154,7 +126,6 @@ section.section{
     line-height: 1.24em;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    /* margin-top: 5px; */
   }
   
   div.pg-bx > h2{
@@ -231,7 +202,6 @@ section.section{
     height:calc(100%-30%) ;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     padding: 0 1%;
   }
   
@@ -371,3 +341,287 @@ i.bx.bx-support:hover::before {
   /* -----------------------------hover effect --end-- */
 
 /* /hover effects rules */
+
+
+/* media queries for responsiveness */
+
+@media screen and (max-width: 640px) {
+
+
+  .header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .logo{
+    width: 150px;
+  }
+
+  .abt-link-btn{
+    margin-right: 5px;
+  }
+  .link-bx{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 50px;
+    margin-top: 0;
+  }
+  .navbar{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+  }
+  #blog{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: wheat;
+  }
+  .blog-pt1,.blog-pt2{
+    width: 100%;
+  }
+
+  div.blog-pt1, div.blog-pt2{
+    padding: 1rem 1rem 0 3.55rem;
+  }
+
+  .h2{
+    margin: 0px,0px,30px,0;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  div.pg-bx{
+    height: 100%;
+    width: 100%;
+    color: wheat;
+  }
+
+  div.pg-bx > p{
+    width: 100%;
+    height: inherit;
+    padding: 1rem;
+    line-height: 1.24em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+
+  .blg-txt{
+    width: 100%;
+  }
+  .blg-p{
+    padding: 0 0 1.5rem 0;
+  }
+  h3{
+    text-align: left;
+    text-decoration: none;
+  }
+
+
+  .row-1{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 1% 0;
+    border-radius: 25px;
+  }
+
+  .row-2{
+    width: 100%;
+    display: flex;
+  .footer {
+      height: 70px;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      display: block;
+  }
+
+  .doc-bx {
+      margin-bottom: 0.5rem;
+  }
+  .c-right {
+      color: #bdbaba;
+      font-size: 0.9rem;
+  }
+}  
+
+
+/* Responsive styles */
+@media screen and (max-width: 868px) {
+    
+  .header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .logo{
+    width: 150px;
+  }
+
+
+  .link-bx{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 50px;
+    margin-top: 0;
+  }
+  .navbar{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+  }
+  #blog{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: wheat;
+  }
+  .blog-pt1,.blog-pt2{
+    width: 100%;
+  }
+
+  div.blog-pt1, div.blog-pt2{
+    padding: 1rem 1rem 0 3.55rem;
+  }
+
+  .h2{
+    margin: 0px,0px,30px,0;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  div.pg-bx{
+    height: 100%;
+    width: 100%;
+    color: wheat;
+  }
+
+  div.pg-bx > p{
+    width: 100%;
+    height: inherit;
+    padding: 1rem;
+    line-height: 1.24em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+
+  .blg-txt{
+    width: 100%;
+  }
+  .blg-p{
+    padding: 0 0 1.5rem 0;
+  }
+  h3{
+    text-align: left;
+    text-decoration: none;
+  }
+
+
+  .row-1{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 1% 0;
+    border-radius: 25px;
+  }
+
+  .row-2{
+    width: 100%;
+    display: flex;
+  }  
+  .footer {
+      height: 70px;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      display: block;
+  }
+
+  .doc-bx {
+      margin-bottom: 0.5rem;
+  }
+  .c-right {
+      color: #bdbaba;
+      font-size: 0.9rem;
+  }
+
+}  
+
+@media screen and (max-width: 500px) {
+  
+  .header{
+    width: 470px;
+    display: flex;
+    flex-direction: row;
+  }
+  .logo{
+    width: 150px;
+  }
+
+  .abt-link-btn{
+    display: none;
+  }
+  .section{
+    background: url(/assets/images/section-bg.png);
+    background-size: cover;
+    background-position: center;
+  }
+  .link-bx{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 50px;
+    margin-top: 0;
+  }
+  .navbar{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+  }
+  #blog{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: wheat;
+  }
+  .blog-pt1,.blog-pt2{
+    width: 100%;
+  }
+
+  .footer {
+    height: 70px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    display: block;
+  }
+
+  .doc-bx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .c-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
