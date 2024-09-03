@@ -83,7 +83,7 @@
   /* Responsive styles */
   @media screen and (max-width: 768px) {
       .header {
-          flex-direction: column;
+          flex-direction: row;
       }
 
       .navbar {
@@ -106,20 +106,13 @@
   }
 
     /* Main content styles */
-    .container {
-      height: 100%;
-      max-width: 100%;
-      margin: 0 auto;
-      /* padding: 1rem; */
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+    
   .container {
     display: flex;
-    /* justify-content: ; */
+    justify-content:center ;
     align-items: center;
     min-height: 100%;
-    background-color: #f0f0f0;
+    background-color: #fff;
 }
 
 legend {
@@ -127,7 +120,7 @@ legend {
     width: 443px;
     padding: 30px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
     text-align: center;
 }
 

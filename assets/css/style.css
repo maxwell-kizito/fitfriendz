@@ -461,6 +461,9 @@ i.bx.bx-support:hover::before {
     width: 80px;
   }
 
+}
 
+@media screen and (max-width:1080px){
+  
 }
 /* --------------------------screen responsiveness-------------------------------------- */
