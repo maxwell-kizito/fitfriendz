@@ -4,7 +4,7 @@
 
 main {
   padding: 12em 0 5em;
-  min-height: 81vh;
+  min-height: calc(100svh - 166px);
   background: url(/assets/images/homegif.gif) no-repeat;
   background-size: cover;
   background-position:center;

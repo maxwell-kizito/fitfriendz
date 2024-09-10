@@ -1,7 +1,6 @@
 section {
     background: url(/assets/images/website\ images-2.png) no-repeat;
     background-size: cover;
-    min-height: 100vh;
     padding: 5em 8% 5em;
     opacity: 0.8;
   }
