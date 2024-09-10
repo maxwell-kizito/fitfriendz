@@ -1,0 +1,5 @@
+main {
+    height: calc(100svh - 166px);
+    background: #3b3b3c url('../images/coming-soon-image.png') no-repeat center;
+    background-size: contain;
+}
